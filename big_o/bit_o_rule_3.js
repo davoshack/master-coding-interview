@@ -7,5 +7,4 @@ function compressBoxesTwice(boxes) {
     console.log(boxes);
   });
 }
-// Two differents inputs, but the same function
-// O(a + b)
+// Different inputs should have different variables: O(a + b)
