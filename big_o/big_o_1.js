@@ -21,3 +21,33 @@ findNemo(everyone) // O(n) --> Linear Time
 //  console.log(boxes[0]); // O(1)
 //  console.log(boxes[1]); // O(1)
 //}
+function hasCommonItems(list1, list2) {
+  for (let item1 of list1) {
+    for (let item2 of list2) {
+      if (item1 === item2) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
+
+const list1 = ['apple', 'banana', 'orange'];
+const list2 = ['pear', 'grape', 'banana'];
+
+console.log(hasCommonItems(list1, list2)); // Output: true
+
+function hasCommonItems2(list1, list2) {
+  let map = {};
+  for (let item1 of list1) {
+    if (!map[item1]) {
+      map[item1] = true;
+    }
+  }
+  for (let item2 of list2) {
+    if (map[item2]) {
+      return true;
+    }
+  }
+  return false;
+}
