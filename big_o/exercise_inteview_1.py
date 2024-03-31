@@ -19,7 +19,8 @@ input_list = [1, 2, 3, 4, 5, 6, 6]
 
 def batch_names(input_list):
     for item in input_list:
-        
+        # Add indented block of code here
+        pass
 
 #input_listInput [1, 2, 3] —> [[1, 2, 3]]
 #Input [1, 2, 3, 3] —> [[1, 2, 3], [3]]
